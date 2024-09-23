@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email Account Setup Service Email Template</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+      body {
+        font-family: "Rubik", sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      table {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+      }
+      .navbar {
+        height: 100%;
+        background-color: #ffd7b3;
+      }
+      .navbar-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 28px 60px;
+        margin: 0;
+      }
+      .banner-container {
+        margin-bottom: -100px;
+      }
+      .banner-image {
+        width: 85%;
+        height: auto;
+        padding: 0;
+      }
+      .title {
+        font-size: 40px;
+        line-height: 48px;
+        font-weight: 700;
+        text-align: center;
+        color: #231f20;
+        margin: 0;
+        padding-bottom: 30px;
+      }
+      .para {
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19.5px;
+        text-align: center;
+        margin: 0;
+        padding-bottom: 31px;
+      }
+      .btn {
+        font-size: 40px;
+        line-height: 47px;
+        font-weight: 600;
+        text-align: center;
+        background-color: #ff7b00;
+        border-radius: 10px;
+        padding: 12px 35px;
+        color: #fff;
+        text-decoration: none;
+        border: none;
+        cursor: pointer;
+      }
+      .upper-div {
+        width: 100%;
+        position: relative;
+        z-index: -1;
+        padding: 0 75px;
+        margin-top: -75px;
+      }
+
+      .service-title {
+        font-family: Rubik;
+        font-size: 58px;
+        font-weight: 700;
+        line-height: 66.88px;
+        text-align: center;
+        color: #ff7b00;
+        padding: 90px 0 30px 0;
+        margin: 0;
+      }
+      .main-card-container {
+        width: 100%;
+        padding: 30px 75px;
+      }
+      .card-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+      }
+      .card-image {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+      }
+      .card-des {
+        position: absolute;
+        bottom: 8%;
+        left: 8%;
+        color: #fcbd15;
+        font-size: 24px;
+        font-weight: 600;
+        font-family: "Montserrat", sans-serif;
+        line-height: 28px;
+        margin: 0;
+      }
+      .footer-container {
+        padding: 37px 75px;
+        width: 100%;
+        background: #ffd7b3;
+      }
+      .footer-content-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 18px;
+      }
+      .footer-para {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.2px;
+        color: #161616;
+        margin: 0;
+      }
+      .copyright-para {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px;
+        color: #ffd7b3;
+        padding: 18px 0px;
+        text-align: center;
+        margin: 0;
+      }
+
+      .card-content {
+        position: relative;
+        border-spacing: 0px !important;
+      }
+
+      @media (max-width: 778px) {
+        .navbar-container {
+          padding: 10px 20px;
+        }
+        .logo {
+          width: 80px;
+          height: 28px;
+        }
+        .social-link-image {
+          width: 70px;
+          height: 10px;
+        }
+        .banner-image {
+          width: 80%;
+          height: auto;
+        }
+        .title {
+          font-size: 26px;
+          line-height: 30px;
+          padding-bottom: 10px;
+        }
+        .para {
+          font-family: Montserrat;
+          font-size: 10px;
+          font-weight: 500;
+          line-height: 12px;
+          text-align: center;
+          margin: 0;
+          padding: 0px 40px 10px 40px;
+        }
+        .btn {
+          padding: 6px 18px;
+          font-size: 20px;
+          line-height: 23px;
+          border-radius: 5px;
+        }
+        .service-title {
+          font-size: 40px;
+          line-height: 45px;
+          padding: 36px 0 10px 0;
+        }
+        .main-card-container {
+          padding: 0px 10px 10px 10px;
+        }
+        .card-container {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 0;
+        }
+        .card-des {
+          font-size: 22px;
+          font-weight: 28px;
+        }
+        .footer-container {
+          padding: 20px 20px;
+        }
+        .footer-content-container {
+          display: block;
+        }
+        .footer-logo-container {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .footer-para {
+          text-align: center;
+        }
+      }
+      @media screen and (max-width: 400px) {
+        .navbar-container {
+          padding: 10px 10px;
+        }
+
+        .logo {
+          width: 80px;
+          height: 28px;
+        }
+        .upper-div {
+          padding: 0 10px;
+          margin-top: -30px;
+        }
+        .title-btn-container {
+          padding-bottom: 30px;
+        }
+        .title {
+          font-size: 22px;
+          line-height: 28px;
+          font-weight: 600;
+          padding-bottom: 15px;
+          margin: 0;
+        }
+        .service-title {
+          font-size: 25px;
+          line-height: 32px;
+          padding: 26px 0 10px 0;
+        }
+        .card-des {
+          font-size: 12px;
+          line-height: 16px;
+        }
+        .footer-logo {
+          width: 72px;
+          height: 26px;
+        }
+        .footer-para {
+          font-size: 8px;
+          line-height: 14px;
+        }
+        .copyright-para {
+          font-size: 8px;
+          line-height: 28px;
+          padding: 5px 0px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div style="width: 100%; padding: 0; margin: 0">
+      <table>
+        <tr style="padding: 0; margin: 0">
+          <td class="navbar">
+            <table>
+              <tr>
+                <td class="navbar-container">
+                  <a href="#">
+                    <img class="logo" src="images/logo.png" alt="logo" />
+                  </a>
+                  <a href="#"
+                    ><img
+                      class="social-link-image"
+                      src="images/social-links.png"
+                      alt="social media links"
+                  /></a>
+                </td>
+              </tr>
+            </table>
+
+            <table class="banner-container">
+              <tr>
+                <td>
+                  <div
+                    style="
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                    "
+                  >
+                    <img
+                      class="banner-image"
+                      src="images/banner-image.png"
+                      alt="banner image"
+                    />
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+
+      <table
+        style="
+          padding-top: 117px;
+          padding-bottom: 74px;
+          background-color: #f5f5f5;
+        "
+      >
+        <tr>
+          <td>
+            <h1 class="title">
+              <span style="color: #f66111">Book Now 15% off</span> With <br />
+              Email Account Setup Service
+            </h1>
+            <p class="para">
+              Take advantage of our limited-time offer: Set up your email
+              account today <br />
+              with our expert service and enjoy 10% off, ensuring secure,
+              seamless <br />
+              communication across all your devices!
+            </p>
+            <div
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              "
+            >
+              <button class="btn">Book Now</button>
+            </div>
+          </td>
+        </tr>
+      </table>
+
+      <table class="main-card-container">
+        <tr>
+          <td>
+            <h1 class="service-title">Other Services</h1>
+            <table style="width: 100%; border-spacing: 0px">
+              <tr>
+                <td class="card-container">
+                  <table style="width: 100%">
+                    <tr>
+                      <td class="card-content">
+                        <img
+                          class="card-image"
+                          src="images/card-1.png"
+                          alt="card image"
+                        />
+                        <h4 class="card-des">Computer Repair and Setup</h4>
+                      </td>
+                    </tr>
+                  </table>
+                  <table style="width: 100%">
+                    <tr>
+                      <td class="card-content">
+                        <img
+                          class="card-image"
+                          src="images/card-2.png"
+                          alt="card image"
+                        />
+                        <h4 class="card-des">Data Recovery</h4>
+                      </td>
+                    </tr>
+                  </table>
+                  <table style="width: 100%">
+                    <tr>
+                      <td class="card-content">
+                        <img
+                          class="card-image"
+                          src="images/card-3.png"
+                          alt="card image"
+                        />
+                        <h4 class="card-des">Anti-Virus Setup</h4>
+                      </td>
+                    </tr>
+                  </table>
+                  <table style="width: 100%">
+                    <tr>
+                      <td class="card-content">
+                        <img
+                          class="card-image"
+                          src="images/card-4.png"
+                          alt="card image"
+                        />
+                        <h4 class="card-des">Email Account Setup</h4>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+      <table class="footer-container">
+        <tr>
+          <td class="footer-content-container">
+            <table class="footer-logo-container">
+              <tr>
+                <td>
+                  <a href="#">
+                    <img
+                      class="footer-logo"
+                      src="images/footer-logo.png"
+                      alt="footer logo"
+                    />
+                  </a>
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td>
+                  <p class="footer-para">
+                    Questions or faq? Contact us at
+                    <span style="color: #f56413">02 9158 9800</span> or
+                    <span style="color: #f56413">geekscrs.com.au</span> Ready to
+                    take your dat Recovery Service. Contact us today to learn
+                    more about our all services!
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+      <table style="width: 100%; background-color: #ff7b00">
+        <tr>
+          <td>
+            <p class="copyright-para">
+              Copyright © 2022-2023 Geeks CRS. All rights reserved.
+            </p>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
